@@ -1,0 +1,40 @@
+# Laravel .gitignore
+
+/node_modules
+/public/storage
+/storage/*.key
+/vendor
+.env
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+/.vagrant
+/public/hot
+/public/mix-manifest.json
+/storage/logs/*.log
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/oauth-private.key
+/storage/oauth-public.key
+
+# IDE / Editor stuff
+.idea
+*.sublime-project
+*.sublime-workspace
+.vscode
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# npm related
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Other
+.env.backup
+.env.local
+.env.testing
+
