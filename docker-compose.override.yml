@@ -1,0 +1,16 @@
+services:
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8081:80
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    depends_on:
+      - mysql
+    networks:
+      - sail
+#This will add additional services on top of the default docker-compose.yml
+#It is an example how can we add additional service phpmyadmin UI db panel.
+#This will make phpMyAdmin available at http://localhost:8081.
+
